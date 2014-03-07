@@ -1,0 +1,41 @@
+﻿/*
+ * Creado por SharpDevelop.
+ * Usuario: Nano
+ * Fecha: 05/03/2014
+ * Hora: 12:03 p.m.
+ * 
+ * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
+ */
+using System;
+
+namespace practica_2
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+
+		double Precio1,Precio2,Precio3;
+			double iva=1.16;
+			Console.WriteLine("Introduce el precio del Agua ");
+			float numer1 =float.Parse(Console.ReadLine());
+			Console.WriteLine("Introduce el precio del pan dulce ");
+			float numer2=float.Parse(Console.ReadLine());
+			Console.WriteLine("troduce el prescio del birote");
+			float numer3=float.Parse(Console.ReadLine());
+
+		Precio1=numer1*iva;
+	    Precio2=numer2*iva;
+	   Precio3=numer3*iva;
+
+	   Console.WriteLine("El precio del Agua con iva "+Precio1);
+	   Console.WriteLine("El precio del pan dulce con iva "+Precio2);
+	   Console.WriteLine("El precio del birote con iva"+Precio3);
+	   Console.WriteLine("El precio total es"+(Precio1+Precio2+Precio3));
+
+
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
